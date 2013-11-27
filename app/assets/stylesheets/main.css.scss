@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Andes';
+  src: font-url('Andes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otto';
+  src: font-url('Otto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html { 
+  background: url(background_party.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body {
+	text-align: center;
+	background: transparent;
+	
+	
+}
+
+h1 {
+	font-size: 40px;
+	
+}
+
+h1.otto {
+	font-family: 'Otto';
+}
+
+h1.andes{
+	font-family: 'Andes';
+	font-size: 90px;
+	}	
+
+span.andes {
+	font-size: 80px;
+}
+
+p {
+	font-size: 20px;
+	padding: 30px;
+}
+ div.container {
+ 	text-align: center;
+ 	background-color: none;
+ }
+
+ #white_transparent {
+ 	background-color:rgba(255,255,255,0.7);
+	-moz-border-radius: 25px 10px / 10px 25px;
+	border-radius: 600px 600px / 600px 600px;
+	position: fixed;
+
+ }

@@ -1,0 +1,38 @@
+<%= form_for @design do |f| %>
+
+	<div class="span3">
+		<%= f.label :name, "Name of design", :class => "label-class" %><br>
+		<%= f.text_field :name %>
+	</div>
+	
+	<div class="span3">
+		<%= f.label :remove_logo, "Remove Logo" %>
+		<%= f.check_box :remove_logo, {}, true, false %>
+	</div>
+	
+	<div class="span3">
+		<%= f.label :hide_contact_host, "Hide Contact Host Banner on New Event" %>
+		<%= f.check_box :hide_contact_host, {}, true, false %>
+	</div>
+	<div class="span3">
+		<%= f.label :hide_save_event, "Hide Save Event Button" %>
+		<%= f.check_box :hide_save_event, {}, true, false %>
+	</div>
+	<div class="span3">
+		<%= f.label :hide_share_options, "Hide Share Options" %>
+		<%= f.check_box :hide_share_options, {}, true, false %>
+	</div>
+	<div class="span3">
+		<%= f.label :remove_event_header, "Remove Event Header" %>
+		<%= f.check_box :remove_event_header, {}, true, false %>
+	</div>
+	<div class="span3">
+		<%= f.label :remove_title, "Remove Title from Event Page, Keep Date" %>
+		<%= f.check_box :remove_title, {}, true, false %>
+	</div>
+	
+<div class="btn">
+	<%= f.submit "Submit" %>
+	</div>
+
+<% end %>

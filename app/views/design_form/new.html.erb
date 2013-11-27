@@ -1,0 +1,11 @@
+<%= form_for @design do %>
+<p><%= label_tag(:name, "Name This Design:") %>
+<%= text_field(:design, :name) %></p>
+
+<%= check_box_tag(:delete_title_date) %>
+<%= label_tag(:delete_title_date, "Delete Title Date") %>
+
+<%= text_field(:color, "color") %>
+
+<%= submit_tag "Create Design!" %>
+<% end %>

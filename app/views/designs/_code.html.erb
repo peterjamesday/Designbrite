@@ -1,0 +1,52 @@
+<% if @design.hide_contact_host == true %>
+
+	/*---hide contact host banner---*/
+	#eb_header_container { 
+	display: none; 
+	}  
+<% end %>
+
+<% if @design.remove_logo == true %>
+
+	/*---hide logo on event page, shows in search---*/
+	.event_title_image {
+	visibility: hidden;
+	height: 5px
+	}
+<% end %>
+
+<% if @design.hide_save_event == true %>
+
+	/*---hide save event button---*/
+	#track_event_container {
+	display: none;
+	visibility: hidden;
+	}
+<% end %>
+
+<% if @design.hide_share_options == true %>
+
+	/*---hide share options---*/
+	#social_module {
+	display: none;
+	visibility: hidden;
+	}
+<% end %>
+
+<% if @design.remove_event_header == true %>
+
+	/*---remove event header---*/
+	#event_header{
+	display:none;
+	visibility: hidden;
+	}
+<% end %>
+
+<% if @design.remove_title == true %>
+
+	/*---remove title from event page, keep date---*/
+	h1, h2.etitle  {
+	visibility: hidden;
+	display: none;
+	}
+<% end %>

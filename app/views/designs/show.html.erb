@@ -1,0 +1,12 @@
+<h2>Here's your new design!</h2>
+
+<h2>Paste the following code in the Custom Header / Footer section of the Design page!</h2>
+<%= @design.name %>
+
+<pre style="text-align: left">
+&lt;style type="text/css"&gt;
+	<%= render "designs/code" %>
+&lt;/style&gt;
+</pre>
+
+<h3><a href=" <%= root_path %>"> Go home </a></h3>
