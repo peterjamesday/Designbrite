@@ -50,9 +50,9 @@ p {
 	font-size: 20px;
 	padding: 30px;
 }
+
  div.container {
  	text-align: center;
- 	background-color: none;
  }
 
  #white_transparent {
@@ -61,4 +61,19 @@ p {
 	border-radius: 600px 600px / 600px 600px;
 	position: fixed;
 
+ }
+
+.form {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 5px;
+	margin: 5px;
+	border-radius: 30px 30px / 30px 30px;
+}
+
+.center-form {
+	text-align: center;
+}
+
+ .your_design {
+	text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3)
  }

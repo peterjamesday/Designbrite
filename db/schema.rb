@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(version: 20131127165140) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "remove_logo",         default: true
+    t.boolean  "remove_logo"
     t.string   "logo"
-    t.boolean  "hide_contact_host",   default: true
-    t.boolean  "hide_save_event",     default: true
-    t.boolean  "remove_event_header", default: true
-    t.boolean  "hide_share_options",  default: true
-    t.boolean  "remove_title",        default: true
+    t.boolean  "hide_contact_host"
+    t.boolean  "hide_save_event"
+    t.boolean  "remove_event_header"
+    t.boolean  "hide_share_options"
+    t.boolean  "remove_title"
   end
 
 end

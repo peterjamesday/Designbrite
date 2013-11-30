@@ -20,6 +20,6 @@ class DesignsController < ApplicationController
 	private
 
 		def safe_design_params
-			return params.require(:design).permit(:name)
+			return params.require(:design).permit(:name, :remove_logo, :hide_contact_host, :hide_save_event, :hide_share_options, :remove_event_header, :remove_title)
 		end
 end
