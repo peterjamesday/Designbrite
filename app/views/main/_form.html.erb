@@ -2,33 +2,75 @@
 	
 <%= form_for @design do |f| %>
 	<div class="center-form">
-		<%= f.label :name, "Name of design", :class => "label-class" %>
+		<%= f.label :name, "Name of design:", :class => "label-class" %>
 		<%= f.text_field :name %>
 	</div>
 		<br>
-		<dl>
-	<label class="checkbox inline">
-	<dt>design</dt>
+	<!-- start list -->
+	<dl class="checkbox inline">
+		<!-- background image -->
+	<dt>Background</dt>
+	<dd><%= f.label :background_image, "Custom Background Image URL:" %>
+		<%= f.text_field :background_image %>
+		<br>
+		<%= f.check_box :background_image_repeat, {}, true, false %>
+		<%= f.label :background_image_repeat, "Repeat Background Image?" %>
+		<%= f.check_box :background_image_size, {}, true, false %>
+		<%= f.label :background_image_size, "Cover Entire Background" %>
+		<%= f.check_box :background_image_position, {}, true, false %>
+		<%= f.label :background_image_position, "Fixed?" %></dd>
+	
+	<dt>Remove From Event Page</dt>
 	<dd><%= f.check_box :remove_logo, {}, true, false  %>
-		<%= f.label :remove_logo, "Remove Logo" %>
+		<%= f.label :remove_logo, "Logo" %>
 		
 	
 		<%= f.check_box :hide_contact_host, {}, true, false %>
-		<%= f.label :hide_contact_host, "Hide Contact Host Banner on New Event" %></dd>
-		<dt>other</dt>
-		<dd><%= f.check_box :hide_save_event, {}, true, false %>
-		<%= f.label :hide_save_event, "Hide Save Event Button" %>
+		<%= f.label :hide_contact_host, "Contact Host Banner" %>
+
+	<%= f.check_box :hide_save_event, {}, true, false %>
+		<%= f.label :hide_save_event, "Save Event Button" %>
 		
 		<%= f.check_box :hide_share_options, {}, true, false %>
-		<%= f.label :hide_share_options, "Hide Share Options" %>
+		<%= f.label :hide_share_options, "Share Options" %>
 	
 		<%= f.check_box :remove_event_header, {}, true, false %>
-		<%= f.label :remove_event_header, "Remove Event Header" %>
+		<%= f.label :remove_event_header, "Event Header" %>
 	
 		<%= f.check_box :remove_title, {}, true, false %>
-		<%= f.label :remove_title, "Remove Title from Event Page, Keep Date" %></dd>
+		<%= f.label :remove_title, "Event Title" %>
+
+		<%= f.check_box :remove_date, {}, true, false %>
+		<%= f.label :remove_date, "Event Date" %>
+
+		<%= f.check_box :remove_org_name, {}, true, false %>
+		<%= f.label :remove_org_name, "Organizer Name" %>
+
+		<%= f.check_box :remove_org_location, {}, true, false %>
+		<%= f.label :remove_org_location, "Organizer Location" %>
+
+		<%= f.check_box :hide_ticket_name, {}, true, false %>
+		<%= f.label :hide_ticket_name, "Ticket Name Column" %>
+
+		<%= f.check_box :hide_promo_link, {}, true, false %>
+		<%= f.label :hide_promo_link, "“Enter Promotional Code” Link" %>
+
+		<%= f.check_box :hide_payment_logos, {}, true, false %>
+		<%= f.label :hide_payment_logos, "Credit Card Logos" %>
+
+		<%= f.check_box :hide_calendar_link, {}, true, false %>
+		<%= f.label :hide_calendar_link, "“Add to My Calendar” Link" %>
+		</dd>
+		<dt>Size Alterations</dt>
+		<dd>
+
+		<%= f.check_box :discount_code, {}, true, false %>
+		<%= f.label :discount_code, "Larger Discount Code Link" %>
+
+		<%= f.check_box :increase_size_salesend, {}, true, false %>
+		<%= f.label :increase_size_salesend, "Increase Size of “Sales End” Column" %></dd>
+
 		
-	</label>
 	</dl>
 	<br>
 	<div class="center-form">

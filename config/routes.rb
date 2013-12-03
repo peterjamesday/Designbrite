@@ -1,5 +1,7 @@
 Designbrite::Application.routes.draw do
+  devise_for :users
   root 'designs#index'
+  match '/newdesign', to: 'designs#new',      via: 'get'
   get "about" => "main#about", :as => "about"
   get "how_it_works" => "main#how_it_works"
 

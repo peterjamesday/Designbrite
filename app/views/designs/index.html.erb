@@ -5,9 +5,11 @@
 
 		<br>
 			<h3>Customize your <a href="http://www.eventbrite.com/myevents" target="_blank"><img src=<%= image_path("eventbrite_logo.png") %> style= "width: 125px"></a> pages.</h3>
-
-		<h3> Sign Up/Sign In</h3>
-
-		<h3> <a href="<%= new_design_path %>"> Create a New Design!</a></h3>
+			
+		<% if user_signed_in? %>
+			<%= render 'main/aftersignin' %>
+		<% else %>
+			<%= render 'main/beforesignin' %>
+		<% end %>
 	</div>
 </div>
