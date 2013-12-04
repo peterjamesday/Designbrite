@@ -52,14 +52,18 @@
 		<%= f.check_box :hide_ticket_name, {}, true, false %>
 		<%= f.label :hide_ticket_name, "Ticket Name Column" %>
 
+		<%= f.check_box :remove_fee_column, {}, true, false %>
+		<%= f.label :remove_fee_column, "Fee Column" %>
+
 		<%= f.check_box :hide_promo_link, {}, true, false %>
-		<%= f.label :hide_promo_link, "“Enter Promotional Code” Link" %>
+		<%= f.label :hide_promo_link, "Enter Promotional Code Link" %>
 
 		<%= f.check_box :hide_payment_logos, {}, true, false %>
 		<%= f.label :hide_payment_logos, "Credit Card Logos" %>
 
 		<%= f.check_box :hide_calendar_link, {}, true, false %>
-		<%= f.label :hide_calendar_link, "“Add to My Calendar” Link" %>
+		<%= f.label :hide_calendar_link, "Add to My Calendar Link" %>
+
 		</dd>
 		<dt>Size Alterations</dt>
 		<dd>

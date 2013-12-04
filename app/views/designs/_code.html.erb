@@ -21,7 +21,6 @@
 	}
 <% end %>
 <% if @design.remove_logo == true %>
-
 	/*---hide logo on event page, shows in search---*/
 	.event_title_image {
 		visibility: hidden;
@@ -134,6 +133,13 @@
 
 	div.panel_head2 {
 		display:none
+	}
+<% end %>
+
+<% if @design.remove_fee_column == true %>
+	/*---hide fee column---*/
+	#ticket_table tr td:nth-child(4) {
+	display: none;
 	}
 <% end %>
 

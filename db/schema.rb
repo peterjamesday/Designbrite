@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202231423) do
+ActiveRecord::Schema.define(version: 20131204022606) do
 
   create_table "designs", force: true do |t|
     t.string   "name"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20131202231423) do
     t.boolean  "background_image_repeat"
     t.boolean  "background_image_size"
     t.boolean  "background_image_position"
+    t.boolean  "remove_fee_column"
   end
 
   create_table "users", force: true do |t|
