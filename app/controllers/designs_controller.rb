@@ -2,6 +2,7 @@ class DesignsController < ApplicationController
 	before_action :authenticate_user!, :only => [:new, :create]
 
 	def index
+		@user = current_user
 	end
 
 	def show
@@ -14,10 +15,13 @@ class DesignsController < ApplicationController
 
 	def create
 		@design = Design.new( safe_design_params )
-
+		@design.user = current_user
 		if @design.save
 			flash[:success] = "You just created a new design!"
 		redirect_to design_path(@design)
+		elsif @design.background_image == false
+			flash.now[:error] = "Please "
+			render 'new'
 		else 
 			flash.now[:error] = "Please enter a name for your design!"
 			render 'new'
@@ -34,6 +38,6 @@ class DesignsController < ApplicationController
 				:discount_code, :hide_ticket_name, :hide_promo_link,
 				:hide_payment_logos, :hide_calendar_link, :increase_size_salesend,
 				:background_image, :background_image_repeat, :background_image_position,
-				:background_image_size, :remove_fee_column)
+				:background_image_size, :remove_fee_column, :image, :user_id)
 		end
 end

@@ -1,0 +1,6 @@
+<ul class="no-bullet">
+<% @user.designs.each do |design| %>
+<%= render :partial => "designs/design",
+			 :locals => { :design => design } %>
+			 <% end %>
+</ul>

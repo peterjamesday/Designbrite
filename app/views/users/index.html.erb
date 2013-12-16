@@ -1,0 +1,13 @@
+
+<div class="centered-white-bckrnd">
+<% @designs.each do |design| %>
+
+<ul class="no-bullet">
+	<li>
+		<h2><a href="<%= design_path(design) %>"><%= design.name %></a></h2>
+	</li>
+		
+	</ul>
+
+<% end %>
+</div>

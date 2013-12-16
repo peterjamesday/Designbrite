@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131204022606) do
+ActiveRecord::Schema.define(version: 20131211044953) do
 
   create_table "designs", force: true do |t|
     t.string   "name"
@@ -38,7 +38,11 @@ ActiveRecord::Schema.define(version: 20131204022606) do
     t.boolean  "background_image_size"
     t.boolean  "background_image_position"
     t.boolean  "remove_fee_column"
+    t.integer  "user_id"
+    t.string   "image"
   end
+
+  add_index "designs", ["user_id"], name: "index_designs_on_user_id"
 
   create_table "users", force: true do |t|
     t.datetime "created_at"

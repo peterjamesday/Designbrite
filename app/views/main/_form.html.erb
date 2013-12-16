@@ -1,4 +1,4 @@
-<div class="form">
+3<div class="form">
 	
 <%= form_for @design do |f| %>
 	<div class="center-form">
@@ -64,6 +64,10 @@
 		<%= f.check_box :hide_calendar_link, {}, true, false %>
 		<%= f.label :hide_calendar_link, "Add to My Calendar Link" %>
 
+
+		<%= f.label :image %>
+		<%= f.file_field :image %>
+		
 		</dd>
 		<dt>Size Alterations</dt>
 		<dd>

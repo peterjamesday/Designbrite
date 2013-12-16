@@ -1,5 +1,6 @@
 class MainController < ApplicationController
 	def index
+		@design = Design.find(params[:id])
 	end
 
 	def show
