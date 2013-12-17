@@ -9,7 +9,7 @@
 	<!-- start list -->
 	<dl class="checkbox inline">
 		<!-- background image -->
-	<div class="left">
+		<div class="left">
 	<dt>Background</dt>
 	<dd><%= f.label :background_image, "Custom Background Image URL:" %>
 		<%= f.text_field :background_image %>
@@ -20,9 +20,9 @@
 		<%= f.label :background_image_size, "Cover Entire Background" %>
 		<%= f.check_box :background_image_position, {}, true, false %>
 		<%= f.label :background_image_position, "Fixed?" %></dd></div>
-	<div class="left marginalized">
-	<dt >Remove From Event Page</dt>
-	<dd ><%= f.check_box :remove_logo, {}, true, false  %>
+	<div class="left">
+	<dt>Remove From Event Page</dt>
+	<dd><%= f.check_box :remove_logo, {}, true, false  %>
 		<%= f.label :remove_logo, "Logo" %>
 		
 	
@@ -66,8 +66,9 @@
 		<%= f.label :hide_calendar_link, "Add to My Calendar Link" %>
 
 
+
 		</dd></div>
-		<div class="left marginalized">
+		<div class="left">
 		<dt>Size Alterations</dt>
 		<dd>
 
@@ -75,10 +76,11 @@
 		<%= f.label :discount_code, "Larger Discount Code Link" %>
 
 		<%= f.check_box :increase_size_salesend, {}, true, false %>
-		<%= f.label :increase_size_salesend, "Increase Size of “Sales End” Column" %></dd>
+		<%= f.label :increase_size_salesend, "Increase Size of “Sales End” Column" %></dd></div>
 
 		
-	</dl></div>
+	</dl>
+	<br>
 	<br>
 	<div class="center-form">
 	<%= f.submit "Submit", :class => 'btn btn-primary' %>
