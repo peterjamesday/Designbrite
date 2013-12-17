@@ -7,6 +7,7 @@ class DesignsController < ApplicationController
 
 	def show
 		@design = Design.find(params[:id])
+		@user = current_user
 	end
 
 	def new

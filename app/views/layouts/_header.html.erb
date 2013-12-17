@@ -10,11 +10,10 @@
 			  <% end %>
         </div>
 		<ul class="nav" >
-			<li class="brand">Designbrite</a></li>
+			<li class="brand">Designbrite</li>
 				<li <%if params[:controller] == "main" and params[:action] == "index"%> class = "active" <% end %> > <a href="<%= root_path %>">HOME</a>
 				</li>
-				<li <%if params[:controller] == "main" and params[:action] == "about"%> class = "active" <% end %>><a href= "<%= about_path  %>" > "ABOUT"</a>
-				</li>
+				
 				<li <%if params[:controller] == "main" and params[:action] == "how_it_works"%> class = "active" <% end %>><a href= "<%= how_it_works_path %>" > HOW IT WORKS</a>
 
 				</li>

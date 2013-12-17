@@ -1,7 +1,7 @@
 <h2 class="your_design">Here's your new design!</h2>
 
 <h2>Paste the following code in the Custom Header / Footer section of the Design page!</h2>
-<%= @design.name %>
+<h2 class="otto centered-white-bckrnd"><%= @design.name %> ✍</h2>
 
 <pre style="text-align: left">
 &lt;style type="text/css"&gt;
@@ -9,4 +9,4 @@
 &lt;/style&gt;
 </pre>
 
-<h3><a href=" <%= root_path %>"> Go home </a></h3>
+<h3><a href=" <%= root_path %>"> Go home </a> | <a href="<%= user_path(@user)%>">My Designs</a></h3>

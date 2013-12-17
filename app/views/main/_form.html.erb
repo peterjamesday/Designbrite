@@ -1,4 +1,4 @@
-3<div class="form">
+<div class="form">
 	
 <%= form_for @design do |f| %>
 	<div class="center-form">
@@ -9,6 +9,7 @@
 	<!-- start list -->
 	<dl class="checkbox inline">
 		<!-- background image -->
+	<div class="left">
 	<dt>Background</dt>
 	<dd><%= f.label :background_image, "Custom Background Image URL:" %>
 		<%= f.text_field :background_image %>
@@ -18,10 +19,10 @@
 		<%= f.check_box :background_image_size, {}, true, false %>
 		<%= f.label :background_image_size, "Cover Entire Background" %>
 		<%= f.check_box :background_image_position, {}, true, false %>
-		<%= f.label :background_image_position, "Fixed?" %></dd>
-	
-	<dt>Remove From Event Page</dt>
-	<dd><%= f.check_box :remove_logo, {}, true, false  %>
+		<%= f.label :background_image_position, "Fixed?" %></dd></div>
+	<div class="left marginalized">
+	<dt >Remove From Event Page</dt>
+	<dd ><%= f.check_box :remove_logo, {}, true, false  %>
 		<%= f.label :remove_logo, "Logo" %>
 		
 	
@@ -65,10 +66,8 @@
 		<%= f.label :hide_calendar_link, "Add to My Calendar Link" %>
 
 
-		<%= f.label :image %>
-		<%= f.file_field :image %>
-		
-		</dd>
+		</dd></div>
+		<div class="left marginalized">
 		<dt>Size Alterations</dt>
 		<dd>
 
@@ -79,7 +78,7 @@
 		<%= f.label :increase_size_salesend, "Increase Size of “Sales End” Column" %></dd>
 
 		
-	</dl>
+	</dl></div>
 	<br>
 	<div class="center-form">
 	<%= f.submit "Submit", :class => 'btn btn-primary' %>
