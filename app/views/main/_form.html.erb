@@ -19,7 +19,11 @@
 		<%= f.check_box :background_image_size, {}, true, false %>
 		<%= f.label :background_image_size, "Cover Entire Background" %>
 		<%= f.check_box :background_image_position, {}, true, false %>
-		<%= f.label :background_image_position, "Fixed?" %></dd></div>
+		<%= f.label :background_image_position, "Fixed?" %>
+		<br>
+		<%= f.check_box :header_background, {}, true, false %>
+		<%= f.label :header_background, "Add Background to Title" %>
+		</dd></div>
 	<div class="left">
 	<dt>Remove From Event Page</dt>
 	<dd><%= f.check_box :remove_logo, {}, true, false  %>
@@ -29,7 +33,7 @@
 		<%= f.check_box :hide_contact_host, {}, true, false %>
 		<%= f.label :hide_contact_host, "Contact Host Banner" %>
 
-	<%= f.check_box :hide_save_event, {}, true, false %>
+		<%= f.check_box :hide_save_event, {}, true, false %>
 		<%= f.label :hide_save_event, "Save Event Button" %>
 		
 		<%= f.check_box :hide_share_options, {}, true, false %>
@@ -80,7 +84,11 @@
 		<%= f.label :increase_size_salesend, "Increase Size of “Sales End” Column" %>
 
 		<%= f.check_box :increase_size_price, {}, true, false %>
-		<%= f.label :increase_size_price, "Increase Size of Price Column" %></dd></div>
+		<%= f.label :increase_size_price, "Increase Size of Price Column" %>
+
+		<%= f.check_box :drop_shadow, {}, true, false %>
+		<%= f.label :drop_shadow, "Add Drop Shadow to Titles" %>
+		</dd></div>
 
 		
 	</dl>

@@ -20,6 +20,25 @@
 		<% end %>
 	}
 <% end %>
+<% if @design.drop_shadow == true %>
+/*Drop Shadow on Headers*/
+	h1, h2, h3, h4 {
+		font-weight: 200;
+		margin-bottom: 10px;
+		text-shadow: 0px 2px 3px rgba(0,0,0,0.3),
+		             0px 4px 10px rgba(0,0,0,0.1),
+		             0px 9px 17px rgba(0,0,0,0.1);
+	}
+<% end %>
+<% if @design.header_background == true %>
+	/*---Add Background to Title---*/
+	#event_header{
+		background: white;
+		padding: 6px 11px 7px 15px;
+		-webkit-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 5px 5px;
+	}
+<% end %>
 <% if @design.remove_logo == true %>
 	/*---hide logo on event page, shows in search---*/
 	.event_title_image {
@@ -34,7 +53,6 @@
 	}  
 <% end %>
 <% if @design.hide_save_event == true %>
-
 	/*---hide save event button---*/
 	#track_event_container {
 		display: none;
@@ -42,7 +60,6 @@
 	}
 <% end %>
 <% if @design.hide_share_options == true %>
-
 	/*---hide share options---*/
 	#social_module {
 		display: none;
@@ -50,7 +67,6 @@
 	}
 <% end %>
 <% if @design.remove_event_header == true %>
-
 	/*---remove event header---*/
 	#event_header{
 		display:none !important;
@@ -58,7 +74,6 @@
 	}
 <% end %>
 <% if @design.remove_title == true %>
-
 	/*---remove title from event page, keep date---*/
 	h1, h2.etitle  {
 		visibility: hidden;
@@ -67,65 +82,50 @@
 <% end %>
 <!-- new -->
 <% if @design.remove_date == true %>
-
 	/*---remove date from event page, keep title---*/
 	#event_header h2 {
 		display: none;
 	}
 <% end %>
-
 <% if @design.remove_org_name == true %>
-
 	/*---remove organizer name from event page---*/
 	h1, h2.etitle  {
 		visibility: hidden;
 		display: none;
 	}
 <% end %>
-
 <% if @design.remove_org_location == true %>
-
 	/*---remove organizer location from event page---*/
 	#event_network  {
 		visibility: hidden;
 		display: none;
 	}
 <% end %>
-
 <% if @design.discount_code == true %>
-
 	/*---larger discount code link---*/
 	#discounts {
 		font-size:30px;
 	}
 <% end %>
-
 <% if @design.hide_ticket_name == true %>
-
 	/*---hide ticket name column---*/
 	#ticket_table tr td:nth-child(1) {
 		display: none;
 	}
 <% end %>
-
 <% if @design.hide_promo_link == true %>
-
 	/*---Hide “Enter Promotional Code” link---*/
 	#discountDiv1 { 
 		display: none; 
 	} 
 <% end %>
-
 <% if @design.hide_payment_logos == true %>
-
 	/*---hide payment_logos---*/
 	.payment_logos{
 		visibility: hidden;
 	}
 <% end %>
-
 <% if @design.hide_calendar_link == true %>
-
 	/*---Hide add to my calendar link---*/
 	#panel_when {
 		display:none
@@ -135,22 +135,18 @@
 		display:none
 	}
 <% end %>
-
 <% if @design.remove_fee_column == true %>
 	/*---hide fee column---*/
 	#ticket_table tr td:nth-child(4) {
 	display: none;
 	}
 <% end %>
-
 <% if @design.increase_size_salesend == true %>
-
 	/*---increase size of “Sales End” column---*/
 	#ticket_table tr td:nth-child(2){
 		font-size:20px;
 	}
 <% end %>
-
 <% if @design.increase_size_price == true %>
 
 	/*---increase size of Price column---*/
@@ -158,9 +154,7 @@
 		font-size:20px;
 	}
 <% end %>
-
 <% if @design.hide_sales_end == true %>
-
 	/*---Hide “Sales End” column---*/
 	#ticket_table tr td:nth-child(2){
 		display: none;
