@@ -39,6 +39,7 @@ class DesignsController < ApplicationController
 				:discount_code, :hide_ticket_name, :hide_promo_link,
 				:hide_payment_logos, :hide_calendar_link, :increase_size_salesend,
 				:background_image, :background_image_repeat, :background_image_position,
-				:background_image_size, :remove_fee_column, :image, :hide_sales_end)
+				:background_image_size, :remove_fee_column, :image, :hide_sales_end, 
+				:increase_size_price)
 		end
 end

@@ -146,6 +146,14 @@
 <% if @design.increase_size_salesend == true %>
 
 	/*---increase size of “Sales End” column---*/
+	#ticket_table tr td:nth-child(2){
+		font-size:20px;
+	}
+<% end %>
+
+<% if @design.increase_size_price == true %>
+
+	/*---increase size of Price column---*/
 	#ticket_table tr td:nth-child(3){
 		font-size:20px;
 	}
